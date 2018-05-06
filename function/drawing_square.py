@@ -1,6 +1,6 @@
 from turtle import *
 
-def carre(csize,ccolor):
+def carre(csize,ccolor,cangle):
   "function which draws a square with a choosen color and size"
   color(ccolor)
   c=0
@@ -8,4 +8,4 @@ def carre(csize,ccolor):
       forward(csize)
       right(90)
       c = c +1
-print (carre.__doc__)
+
