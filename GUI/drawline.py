@@ -11,6 +11,13 @@ def drawline():
     #Change coordinates for the next line :
     y2, y1 = y2+10, y1-10
 
+def drawline2():
+    'Draw a cross in the canevas'
+    x3 , y3, x4, y4 = 0 , 375 , 499, 375 #Cross coordinates
+    can1.create_line(x3,y3,x4,y4)
+    x3,y3,x4,y4 = 250, 0 , 250, 649
+    can1.create_line(x3,y3,x4,y4)
+
 def changecolor():
     "Random color change"
     global col
@@ -21,6 +28,7 @@ def changecolor():
 #----Main Program----
 
 x1 , y1, x2, y2 = 1, 649, 499, 1 # Line coordinates
+
 col = 'dark green'      #Line color
 
 #Building Main widget(master)
@@ -34,6 +42,8 @@ but2 = Button(fen1,text='Draw a line',command=drawline)
 but2.pack()
 but3 = Button(fen1,text='Change Color',command=changecolor)
 but3.pack()
+but4 = Button(fen1,text='Scope',command=drawline2)
+but4.pack()
 
 fen1.mainloop() #Starting Event receptioner
 
