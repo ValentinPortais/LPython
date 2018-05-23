@@ -20,13 +20,13 @@ def changecolor():
 
 #----Main Program----
 
-x1 , y1, x2, y2 = 10, 190, 190, 10 # Line coordinates
+x1 , y1, x2, y2 = 1, 649, 499, 1 # Line coordinates
 col = 'dark green'      #Line color
 
 #Building Main widget(master)
 fen1 = Tk()
 #Building Slaves widgets
-can1 = Canvas(fen1,bg='dark grey',height=200,width=200)
+can1 = Canvas(fen1,bg='dark grey',height=650,width=500)
 can1.pack(side=LEFT)
 but1 = Button(fen1,text='Close',command=fen1.quit)
 but1.pack(side=BOTTOM)
