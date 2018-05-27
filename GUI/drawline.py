@@ -13,9 +13,9 @@ def drawline():
 
 def drawline2():
     'Draw a cross in the canevas'
-    x3 , y3, x4, y4 = 0 , 375 , 499, 375 #Cross coordinates
+    x3 , y3, x4, y4 = 0 , 325 , 500, 325 #Cross coordinates
     can1.create_line(x3,y3,x4,y4)
-    x3,y3,x4,y4 = 250, 0 , 250, 649
+    x3,y3,x4,y4 = 250, 0 , 250, 650
     can1.create_line(x3,y3,x4,y4)
 
 def changecolor():
