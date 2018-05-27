@@ -3,9 +3,9 @@ from tkinter import *
 from random import randrange
 
 #Event function definition
-def drawline():
+def drawline(x1,y1,x2,y2):
     "Draw a line in the canevas can1"
-    global x1, y1, x2, y2, col
+    global col
     can1.create_line(x1,y1,x2,y2,width=2,fill=col)
 
     #Change coordinates for the next line :
@@ -27,7 +27,7 @@ def changecolor():
 
 #----Main Program----
 
-x1 , y1, x2, y2 = 1, 649, 499, 1 # Line coordinates
+x1, y1, x2, y2 = 10, 190, 190, 10
 
 col = 'dark green'      #Line color
 
@@ -38,7 +38,7 @@ can1 = Canvas(fen1,bg='dark grey',height=650,width=500)
 can1.pack(side=LEFT)
 but1 = Button(fen1,text='Close',command=fen1.quit)
 but1.pack(side=BOTTOM)
-but2 = Button(fen1,text='Draw a line',command=drawline)
+but2 = Button(fen1,text='Draw a line',command=lambda: drawline(x1,y1,x2,y2))
 but2.pack()
 but3 = Button(fen1,text='Change Color',command=changecolor)
 but3.pack()
