@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 import tkinter as tk
+from math import sqrt
 def distance():
-    lab1.configure(text = "label")
+
+    xc1,xc2=(2*x1+s1)/2, (2*x2+s2)/2
+    yc1,yc2=(2*y1+s2)/2, (2*y2+s2)/2
+    ab=sqrt((xc2-xc1)**2+(yc2-yc1)**2)
+    lab1.configure(text = "Distance :" + str(ab))
+
 
 def move(lr,ud):
     global x1,y1
