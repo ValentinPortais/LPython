@@ -10,7 +10,7 @@ def conv_far(event):
 
 def conv_cel(event):
   "Convert temperature to degrees Celsius"
-  cvalue = int((eval(entr2.get()) - 32) / 1.80)
+  cvalue = int((eval(entr2.get()) - 32) // 1.80)
   #Clear entry and insert converted result
   entr1.delete(0, tk.END)
   entr1.insert(0, cvalue)
