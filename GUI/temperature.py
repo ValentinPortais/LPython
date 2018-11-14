@@ -2,6 +2,7 @@
 import tkinter as tk
 
 def conv_far(event):
+
   "Convert temperature to degrees Fahrenheit"
   fvalue = int(eval(entr1.get()) * 1.80 + 32)
   #Clear entry and insert converted result
@@ -19,6 +20,7 @@ def conv_cel(event):
 fen1 = tk.Tk()
 fen1.title("Temperature")
 
+#Interface definition
 tk.Label(fen1, text= 'Celsius').grid(sticky=tk.E)
 tk.Label(fen1, text= 'Farentheit').grid(sticky=tk.E)
 entr1 = tk.Entry(fen1)
